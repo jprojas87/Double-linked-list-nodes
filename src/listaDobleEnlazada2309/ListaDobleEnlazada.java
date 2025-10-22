@@ -27,6 +27,7 @@ public class ListaDobleEnlazada<Item> implements Iterable<Item>{
         }
     }
 
+
     public getPreviousNode(Node nodo){
         final Node predecesor = nodo.prev;
         final Node newNode = new Node();
@@ -36,6 +37,7 @@ public class ListaDobleEnlazada<Item> implements Iterable<Item>{
         else
             predecesor.next = newNode;
     }
+
 
     public void addFirst(Item item){
         Node oldFirst = first;
